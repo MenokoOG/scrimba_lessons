@@ -1,2 +1,8 @@
 12-24-23: initialized the local repo
 
+****added to gitHub 12-24-23*******
+
+git remote add origin https://github.com/MenokoOG/scrimba_lessons.git
+git branch -M main
+git push -u origin main
+
