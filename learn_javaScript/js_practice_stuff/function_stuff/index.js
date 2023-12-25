@@ -1,5 +1,7 @@
-const welcomeEl = document.getElementById("welcome-el");
+const welcomeEl = document.getElementById("welcome-el")
 
-function greetUser() {
-    welcomeEl.textContent = "Welcome back, Menoko OG"    
-};
+function greetUser(greeting, name, ) {
+    welcomeEl.textContent = `${greeting}, ${name}`
+}
+
+greetUser("Howdy", "Menoko OG", )
