@@ -9,18 +9,18 @@ const leadsFromLocalStorage = JSON.parse( localStorage.getItem("myLeads") );
 
 if (leadsFromLocalStorage){
     myLeads = leadsFromLocalStorage
-    render(myLeads)
+    renderLeads(myLeads)
 };
 
-function render(leads){
+function renderLeads(){
     let listItems = "";
-    for (let i= 0; i < leads.length; i++){
+    for (let i= 0; i < myLeads.length; i++){
         // listItems += "<li><a target='_blank' href='" + myLeads[i] + "'>" + myLeads[i] + "</a></li>"
         //template string, it is like making f string in python. This makes it more readable than expression above.
         listItems += `
             <li>
-                <a target='_blank' href='${leads[i]}'>
-                ${leads[i]}
+                <a target='_blank' href='${myLeads[i]}'>
+                ${myLeads[i]}
                 </a>
             </li>
         `
@@ -31,14 +31,14 @@ function render(leads){
 deleteBtn.addEventListener("dblclick", function(){
     localStorage.clear()
     myLeads = []
-    render(myLeads)
+    renderLeads()
 });
 
 inuptBtn.addEventListener("click", function () {   
     myLeads.push(inputEl.value)
     inputEl.value = ""
     localStorage.setItem("myLeads", JSON.stringify(myLeads))
-    render(myLeads)
+    renderLeads()
 });
 
 
