@@ -3,7 +3,7 @@ import { initializeApp } from "https://www.gstatic.com/firebasejs/9.15.0/firebas
 import { getDatabase, ref, push, onValue, remove } from "https://www.gstatic.com/firebasejs/9.15.0/firebase-database.js"
 
 const appSettings = {
-    databaseURL: "https://playground-426c6-default-rtdb.firebaseio.com/"
+   //original is with developer
 }
 
 const app = initializeApp(appSettings)
