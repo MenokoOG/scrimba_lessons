@@ -1,0 +1,14 @@
+.main {
+    margin-top: 100px;
+}
+
+.google-img {
+    display: block;
+    width: 300px;
+    margin-bottom: 15px;
+}
+
+.the-input {
+    display: block;
+    width: 400px;
+}

@@ -1,0 +1,18 @@
+/* 
+Challenge:
+Re-design the cookie widget!
+PS: Make sure you change ALL of the listed CSS properties.
+*/
+
+body {
+    background: blue;     
+    /* color: yellow;             */
+    font-size: 20px;        
+    font-weight: bold;  
+    text-align: center;      
+    margin-top: 150px;   
+}
+
+#cookie-el{
+    color: rgb(0, 255, 0);
+}
