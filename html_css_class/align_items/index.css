@@ -13,6 +13,11 @@
     align-items:
     start, center, end
     */
+    display: flex;
+    flex-direction: column; /*this flips the axis in the flexbox container*/
+    justify-content: start; 
+    align-items: center;
+    
 }
 
 .item {
