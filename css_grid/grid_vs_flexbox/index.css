@@ -1,0 +1,35 @@
+.flexbox-header {
+    display: flex;
+}
+
+.flexbox-header :nth-child(3) {
+    margin-left: auto;
+}
+
+.grid-page {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: 40px 200px 40px;
+}
+/*the header below combines 1 dimesion flex inot css 2 dimension grid*/
+.header {
+    grid-column: span 12;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.header > div:nth-child(3){
+    margin-left: auto;
+}
+
+.menu {
+    grid-column: span 2;
+}
+
+.content {
+    grid-column: span 10;
+}
+
+.footer {
+    grid-column: span 12;
+}
