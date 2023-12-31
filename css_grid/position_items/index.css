@@ -1,0 +1,27 @@
+.container {
+    display: grid;
+    grid-gap: 3px;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: 40px 200px 40px;
+}
+
+.header {
+    /* there are three column positions for refernce if there are two columns then 3 positions*/
+    grid-column: 2 / -1;
+    
+}
+
+.menu {
+    grid-row: 1 / 4;
+}
+
+.content {
+    grid-column: 2 / -1;
+}
+
+.footer {
+    /* all the below are the same way to achieve position the -1 though is good when you don't really know how many columns are present in layout*/
+    grid-column: 2 / -1;
+    /* grid-column: 1 / 3; */
+    /* grid-column: 1 / span 2; */
+}
