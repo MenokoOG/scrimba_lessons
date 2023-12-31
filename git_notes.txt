@@ -6,3 +6,4 @@ git remote add origin https://github.com/MenokoOG/scrimba_lessons.git
 git branch -M main
 git push -u origin main
 
+updated through vsc 12-29-23
